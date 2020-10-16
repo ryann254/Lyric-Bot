@@ -19,7 +19,8 @@ class Lyric_Bot():
     def __init__(self, singer, title):
         self.singer = singer
         self.title = title
-        self.driver = webdriver.Chrome('C:\Selenium\chromedriver.exe')
+
+        self.driver = webdriver.Chrome('Add the path to your where you have downloaded your chromedriver here')
         self.driver.get(lyric_website)
         # Save the window opener (current window, do not mistake with tab... not the same)
         main_window = self.driver.current_window_handle
